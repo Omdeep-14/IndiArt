@@ -4,6 +4,7 @@ import LandingPage4 from "../assets/IndiArt-assets/LandingPage4.jpeg";
 import warli1 from "../assets/IndiArt-assets/warli1.jpeg";
 import madhubani1 from "../assets/IndiArt-assets/madhubani1.jpeg";
 import chittara1 from "../assets/IndiArt-assets/chittara1.jpeg";
+import { SignInButton, SignUpButton } from "@clerk/clerk-react";
 
 const LandingPage = () => {
   return (
@@ -57,12 +58,16 @@ const LandingPage = () => {
               directly from the artists. Support their craft and help preserve
               India’s rich cultural heritage.
             </p>
-            <button className="bg-gray-900 text-white px-8 py-3 md:px-15 rounded-full hover:bg-gray-800 transition-colors mx-2 md:mx-5 cursor-pointer">
-              Artist
-            </button>
-            <button className="bg-gray-900 text-white px-8 py-3 md:px-13 rounded-full hover:bg-gray-800 transition-colors cursor-pointer">
-              Explorer
-            </button>
+            <SignUpButton>
+              <button className="bg-gray-900 text-white px-8 py-3 md:px-15 rounded-full hover:bg-gray-800 transition-colors mx-2 md:mx-5 cursor-pointer">
+                Sign Up
+              </button>
+            </SignUpButton>
+            <SignInButton>
+              <button className="bg-gray-900 text-white px-8 py-3 md:px-13 rounded-full hover:bg-gray-800 transition-colors cursor-pointer">
+                Sign In
+              </button>
+            </SignInButton>
           </div>
 
           <div className="relative">
