@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useUser } from "@clerk/clerk-react";
 import Artist from "./Artist";
 import Explorer from "./Explorer";
+import Quiz from "./Quiz";
 
 const Home = () => {
   const [activeView, setActiveView] = useState("explorer"); // default view
@@ -33,6 +34,16 @@ const Home = () => {
           >
             Explorer
           </button>
+          <button
+            className={`px-4 py-2 rounded cursor-pointer ${
+              activeView === "explorer"
+                ? "bg-amber-500"
+                : "bg-amber-200 hover:bg-amber-500 "
+            }`}
+            onClick={() => setActiveView("quiz")}
+          >
+            Quiz
+          </button>
         </nav>
       </header>
 
@@ -40,6 +51,7 @@ const Home = () => {
       <main>
         {activeView === "artist" && <Artist />}
         {activeView === "explorer" && <Explorer />}
+        {activeView === "quiz" && <Quiz />}
       </main>
     </div>
   );
