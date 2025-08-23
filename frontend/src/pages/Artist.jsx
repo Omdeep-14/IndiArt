@@ -386,32 +386,22 @@ const ArtistPage = () => {
               placeholder="Your artist name"
             />
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              className="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
-              placeholder="your.email@example.com"
-            />
-          </div>
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Bio
+            Location
           </label>
           <textarea
             rows="4"
             className="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
-            placeholder="Tell us about your art journey..."
+            placeholder="Enter your state"
           />
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Specialization
+            Speciality
           </label>
           <select className="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200">
             <option>Traditional Indian Art</option>
